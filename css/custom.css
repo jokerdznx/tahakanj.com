@@ -4,7 +4,7 @@ Modify this file to your hearts content and make your website look awesome!*/
 
 
 body{
-	background-color: grey;
+	background-color: #ebebeb;
 	padding-top: 80px;
 }
 
@@ -15,7 +15,7 @@ body{
   padding-bottom: 100px;
   width:100%;
   min-height: 100vh;
-  background: url('https://i.imgur.com/j7mQztC.gif') no-repeat center center fixed;
+  background: url('../img/common/homepage_bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -49,7 +49,7 @@ a.navbar-brand{
 
 	a.float-nav-link{
 		font-family: 'Lato', Sans-Serif;
-		color: #345;
+		color: #595959;
 		font-size: 14px;
 		font-weight: 600;
 		text-align: left;
@@ -65,14 +65,18 @@ img{
 
 /*Font Override Rules*/
 h1, h2, h3, h4, h5, h6 {
-	font-family:'Montserrat', Sans-Serif;
+	font-family:'helvetica', Sans-Serif;
 	margin-bottom: 20px;
-	color: #fff;
 }
 	h1.welcome-special{
 		font-size: 90px;
 	}
 
+	h1.axle{
+		font-size: 70px;
+		margin-top: 100px;
+		margin-bottom: -10px;
+	}
 	h2.welcome-special-sub{
 		font-family: 'Lato', Sans-Serif;
 		font-size: 30px;
@@ -80,18 +84,18 @@ h1, h2, h3, h4, h5, h6 {
 
 	h3{
 		text-transform: uppercase;
-		color: #FFF;
+		color: #dc3545;
 		letter-spacing: -0.5px;
 	}
 
 p, li, span, a {
-	font-family: 'Lato', Sans-Serif;
+	font-family: 'helvetica', Sans-Serif;
 	text-align: justify;
 	font-weight: 300;
 }
 
 	p{
-		color: #FFF;
+		color: #494949;
 		line-height: 30px;
 		margin-bottom: 25px;
 	}
@@ -115,16 +119,16 @@ span.img-caption{
 .welcome-button{
 	background-color: transparent;
 	border-radius: 0px 0px 0px 0px;
-	border: 3px solid #FFF;
+	border: 3px solid #000;
 	font-family:'Montserrat', Sans-Serif;
 	font-size: 15px;
-	color: #FFF;
+	color: #000;
 	text-transform: uppercase;
 }
 
 .welcome-button:hover{
-	background-color: #FFF;
-	border-color: #FFF;
+	background-color: #000;
+	border-color: #000;
 }
 
 .master-heading{
@@ -147,4 +151,55 @@ span.img-caption{
 	min-height: 100px;
 	background-color: #989898;
 	border-top: 1px solid #727272;
+}
+
+.carousel-indicators li {
+background-color: #000;
+
+}
+
+.carousel-indicatorsactive{
+background-color: #999;
+}
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 2px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 170px;
+  height: 170px;
+}
+
+.axle-p {
+
+margin-bottom: 50px;
+margin-top: 100px;
+
+}
+
+
+.userflow {
+
+margin-bottom: 150px;
+margin-top: 70px;
+
+}
+
+.sign {
+	font-size: 10px;
+	margin-bottom: 50px;
+
+}
+
+.img-banner {
+
+	width: 100%;
 }
