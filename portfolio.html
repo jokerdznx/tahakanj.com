@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Grab Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat" rel="stylesheet">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="./css/custom.css">
+
+    <!-- Page Title -->
+    <title>Axle</title>
+
+    <!-- This is our Meta Description -->
+    <meta name="description" content="Axle | Autonomous tractor | Taha Kanj">
+
+    <script>
+    function magnify(imgID, zoom) {
+      var img, glass, w, h, bw;
+      img = document.getElementById(imgID);
+
+      /*create magnifier glass:*/
+      glass = document.createElement("DIV");
+      glass.setAttribute("class", "img-magnifier-glass");
+
+      /*insert magnifier glass:*/
+      img.parentElement.insertBefore(glass, img);
+
+      /*set background properties for the magnifier glass:*/
+      glass.style.backgroundImage = "url('" + img.src + "')";
+      glass.style.backgroundRepeat = "no-repeat";
+      glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+      bw = 3;
+      w = glass.offsetWidth / 2;
+      h = glass.offsetHeight / 2;
+
+      /*execute a function when someone moves the magnifier glass over the image:*/
+      glass.addEventListener("mousemove", moveMagnifier);
+      img.addEventListener("mousemove", moveMagnifier);
+
+      /*and also for touch screens:*/
+      glass.addEventListener("touchmove", moveMagnifier);
+      img.addEventListener("touchmove", moveMagnifier);
+      function moveMagnifier(e) {
+        var pos, x, y;
+        /*prevent any other actions that may occur when moving over the image*/
+        e.preventDefault();
+        /*get the cursor's x and y positions:*/
+        pos = getCursorPos(e);
+        x = pos.x;
+        y = pos.y;
+        /*prevent the magnifier glass from being positioned outside the image:*/
+        if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+        if (x < w / zoom) {x = w / zoom;}
+        if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+        if (y < h / zoom) {y = h / zoom;}
+        /*set the position of the magnifier glass:*/
+        glass.style.left = (x - w) + "px";
+        glass.style.top = (y - h) + "px";
+        /*display what the magnifier glass "sees":*/
+        glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+      }
+
+      function getCursorPos(e) {
+        var a, x = 0, y = 0;
+        e = e || window.event;
+        /*get the x and y positions of the image:*/
+        a = img.getBoundingClientRect();
+        /*calculate the cursor's x and y coordinates, relative to the image:*/
+        x = e.pageX - a.left;
+        y = e.pageY - a.top;
+        /*consider any page scrolling:*/
+        x = x - window.pageXOffset;
+        y = y - window.pageYOffset;
+        return {x : x, y : y};
+      }
+    }
+</script>
+  </head>
+  <body>
+
+
+
+      <!-- This is where our Navbar lives -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./img/common/hammer.png" width="50" height="50" class="d-inline-block align-center nav-bar-img" alt=""> Taha Kanj</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="./index.html">Home </a>
+
+
+              <a class="nav-item nav-link active" href="axle.html">Portfolio<span class="sr-only">(current)</span></a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+      <div align="center">
+      <body style="background-color:white;">
+      <div class="container-fluid">
+        <img src="./img/companion/banner.png" class="img-banner" alt="image">
+      </div>
+      <div class="container bg-transparent">
+        <div class="row align-items-center h-100">
+
+
+          <div class="col-md-12">
+                <div class="col-md-12">
+                <h1 class="axle">Axle</h1>
+                <h3><center>Bringing farming into the technological revolution</h3></center>
+
+                <p><center>Axle is an interactive application that brings your tractor into the 21st century by allowing you to remotely complete tasks all around your farm while keeping full control of what your tractor is doing and where your tractor is.</p></center>
+
+                <p><center>Axle allows you to keep track of what your tractor is up to and how long it has until the current task is completed. You can also rearrange tasks in the order you would like them to be completed while also creating new tasks. This tasks system works in a similar way to how a music playlist would work, allowing you to rearrange, pause, stop and skip tasks.</p></center>
+
+                <p><center>Within Axle you can fully monitor what your tractor is doing. In the monitoring tab, you can access and view point of view cameras places around the tractor. You can also access a birds’ eye view map of the tractors route along with a heat map of the farm.</p></center>
+
+                <p><center>The goal of Axle is to provide farmers with a way to autonomously decrease physical labour on a farm while also enhancing the efficiency of working on a farm.</p></center>
+                </div>
+
+
+              <img src="./img/companion/proto.gif" class="axle-p" alt="image">
+
+
+              <div class="col-md-12">
+              <a href="https://www.dropbox.com/s/hqvzxc1nnnn7ta7/prototype%202.app.zip?dl=0" download>
+                <img src="./img/Companion/download.png" style="width:5%;height:5%;" class="img-fluid" alt="image">
+                <span class="img-caption"><center>Click to download prototype (Mac only)</center></span></a>
+
+              </div>
+
+              <div class="col-md-12">
+                <h1><center>THE DESIGN PROCESS</center></h1>
+              </div>
+
+
+              <div class="col-md-12">
+                <h3>Research</h3>
+                    <p><center>Our user group consisted of full time farmers, people that farm as a hobby and people that want to become famer.
+                    </p></center>
+
+                    <p><center>Interviews and surveys were used to gather research on where our autonomous technology would be best applied on farm. Interviews with farmers allowed us to gain an in-depth view of what a farmer does on a daily basis and where autonomy would be most useful.
+                    </p></center>
+
+                    <p><center>With qualitative data gathered from interviews with farmers, we needed numbers and statistics on autonomous technologies on a farm. Our aim was to find out if farmers wanted and/or needed autonomy on a farm. However, it was challenging to get a hold of enough farmers to gather a large amount of data. Eventually we turned to Reddit. Reddit is an online link sharing website that has pages for almost anything, including a page dedicated to farming, so I made a post explaining our project and linked a survey.</p></center>
+
+                    <p><center>With data collected, we then synthesized our data and developed our user needs. Our user needs were: The product must make farming more efficient for the farmer while reducing physical labour. The product must also allow the farmer to have full control over the vehicle when necessary.</p></center>
+
+                  </div>
+                </div>
+
+
+
+
+            <div class="col-md-12">
+            <h3>Low Fidelity prototyping and initial tests</h3>
+              <div class="row slide-show">
+
+                <div class="col-md-6">
+                  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" height="500" src="./img/process-journal/test_tractor.jpg?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" height="500" src="./img/process-journal/test_tractor3.jpg?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" height="500" src="./img/process-journal/test_tractor2.jpg?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+
+
+                  <div class="col-md-6">
+              <p><center>Paper prototyping crucial in learning and understanding what users found hard and what they excelled at. The main goal for the paper prototyping phase was to test the fundamentals of the app and how the user interacts with key features of the app. The key features that were easy to understand were kept the same while the features users found hard to interact with were iterated upon.
+              </p></center>
+
+              <p><center>We iterated the concept multiple times over paper then again with wireframes. We used Pop to click through the pages on an actual phone, this really helped our users test as it put all the pieces of paper in the context of a phone application. We then put users in the environment of a farm and asked them to complete tasks for each concept. This gave us a necessary insight into how users interacted with the app when it wasn’t the main focus for them. This revealed new problems that would have been impossible to find in a controlled environment such as the lounge room of my house. For example, we found that users found it difficult to see the screen in direct sunlight due to the colours we had chosen. This lead us to iterate on the aesthetics of the app and implement a design that both looked pleasing while also being useable outdoors.
+              </p></center>
+
+
+
+            </div>
+                </div>
+
+
+
+
+
+
+          </div>
+
+          <div class="col-md-12">
+            <h3>high fidelity prototyping and final iterations</h3>
+          <div class="row slide-show">
+            <div class="col-md-6">
+              <p><center>Starting the development of the app meant that I had to choose a program to work in. InVIsion was the first program I looked into, however you couldn’t do many animations beyond transitions. FramerX, another prototyping program on the other hand, could do whatever you dreamed of if you knew how to code in CoffeeScript, which I wasn’t an expert at. That’s when I found PrincipleForMac. Principle allowed me to easily navigate and add animations between pages, it actually reminded me a lot of the old Adobe Flash in terms of the animations, you couldn’t edit frame by frame but the linking between pages and key frames were very familiar. Principle asks you to make at least two artboards to animate between, this meant for every page that had an animation, I had to make an extra duplicate of that page.</p></center>
+
+
+              <p><center>The first iteration of our app looked shocking to say the least, this is partly due to the fact that our wire frames were built in Illustrator and not Sketch. If I could go back in time I would definitely use Sketch as Principle has a built in Sketch plugin. As you can see, the first high fidelity prototype still looked rough and there were many things to fix up, such as the tracking page with the map, the scrolling hexagon menu and all the button text that were just place holders still.</p></center>
+
+
+            </div>
+
+            <div class="col-md-6">
+            <iframe width="330" height="510" src="https://www.youtube.com/embed/VuwhWtYNdEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>First Principle iteration</figcaption>
+          </div>
+
+
+          </div>
+        </div>
+
+<div class="col-md-12">
+        <div class="col-md-6">
+          <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img class="d-block w-100" width="300" height=750 src="./img/portfolio/Concept home-04.png?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" width="300" height="750" src="./img/common/CAMERA-PAGE.png?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" width="300" height="750" src="./img/common/CURRENT-TASK.png?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" width="300" height="750" src="./img/common/LANDING-PAGE.png?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+
+            <figcaption><strong>Early wireframes</strong></figcaption>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+          <div class="col-md-12">
+          <p><center>Over 1,500 animations and 35 different pages later, the final prototype of Axle looked aesthetically pleasing and ran nice and smoothly. </p></center>
+
+          <div>
+            <center><img src="./img/common/z.png" width="850" height="500"></center>
+            <figcaption>Inside PrincipleForMac</figcaption>
+          </div>
+          <br></br>
+          <div class="col-md-8">
+            <iframe width="330" height="510" src="https://www.youtube.com/embed/UIid-z-jYeI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption>Final iteration</figcaption>
+          </div>
+
+
+
+        </div>
+
+        <br></br>
+        <div class="col-md-12">
+          <h3>Design decisions</h3>
+
+          <p><center>Throughout the design process many design choices were made, most importantly, the main navigation of the app. Axle uses a hexagon icon to determine what page the user is on. The can interact with the hexagon to change between pages. The can also hide the icon by pressing the down arrow beneath it. At first, we applied a traditional tab navigation bar on the screen that would allow the user to change pages, however, through user testing, user found that there were way too many icons within the navigation bar and that there should either sub headings for some pages or to just combine some pages.</center></p>
+
+          <p><center>However, these potential fixes to the overwhelming navigation bar actually challenged our user need of allowing the user to maintain full control over the tractor, as it impacted how much information and controls we could keep on each page.</center></p>
+
+          <p><center>Our solution to this problem was to ditch the tradition navigation bar for a hexagon slider navigation. This treated every page equally and allowed us to make use of the extra real estate we had on each screen. Users could still click the menu button on the top left and jump to the page they were looking for. Otherwise, each page had been set out in the logical order they would be used in. Users found that this iteration was the easiest to understand and navigate.</center></p>
+
+          <p><center> </center></p>
+
+
+
+          <div class="col-md-12">
+          <strong>User Flow Diagram</strong>
+          </div>
+
+              <div class="img-magnifier-container" class="col-md-12" align="center">
+
+                <img id="myimage" src="./img/companion/flow.png" class="userflow" alt="user flow">
+                </div>
+
+
+            </div>
+
+                <div class="col-md-12">
+                  <h3>Relections</h3>
+
+                  <p><center>As a final reflection on the project I believe more time could have been spent on the research of our users and the overall concept ideation could have been less linear. We could have started with more out of the ordinary ideas just to see what we features or user interactions we could learn from and possibly implement in our final concept. I would have also liked to iterate more on the final concept as I believe there is still room for improvement on Axle. </center></p>
+
+                </div>
+
+
+<br></br>
+
+
+
+
+
+
+
+
+              <script>
+          magnify("myimage", 1.5);
+            </script>
+
+
+
+
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
