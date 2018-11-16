@@ -152,9 +152,12 @@ span.img-caption{
 
 /*Footer*/
 .footer{
+	width:100%;
+
+ bottom:0;
+ left:0;
 	margin-top: 50px;
 	padding-top: 30px;
-	width: 100%;
 	min-height: 100px;
 	background-color: #989898;
 	border-top: 1px solid #727272;
