@@ -2,10 +2,10 @@
 
 
 if (isset($_POST['sendMessageButton'])) {
-$name = strip_tags(htmlspecialchars($_POST['name'];
-$email = strip_tags(htmlspecialchars($_POST['email'];
-$phone = strip_tags(htmlspecialchars($_POST['phone'];
-$message = strip_tags(htmlspecialchars($_POST['message'];
+$name =  $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
 
 
 // Create the email and send the message
