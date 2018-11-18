@@ -150,18 +150,41 @@ span.img-caption{
 	padding: 30px 0px 50px 0px;
 }
 
-/*Footer*/
-.footer{
-	width:100%;
+.icons a{
+	display: inline-block;
+	font-size: 50px;
+	color: #8b1df9;
+	padding-left: 10px;
 
- bottom:0;
- left:0;
+}
+
+.fa-facebook:hover, .fa-instagram:hover,  .fa-twitter:hover, .fa-lastfm-square:hover, .fa-envelope:hover{
+	color: #fff;
+}
+
+.footer{
+	bottom: 0;
+	margin-bottom: -100px;
 	margin-top: 50px;
 	padding-top: 30px;
+	width: 100%;
 	min-height: 100px;
-	background-color: #989898;
+	background-color: #292c2f;
+	color: white;
 	border-top: 1px solid #727272;
+
 }
+
+.inside {
+	padding-bottom: 30px;
+}
+
+.tkbot {
+	margin-top: -30px;
+}
+
+
+
 
 .carousel-indicators li {
 background-color: #000;
