@@ -156,6 +156,10 @@ span.img-caption{
 
 }
 
+.flex {
+	margin-top: -80px;
+}
+
 .fa-facebook:hover, .fa-instagram:hover,  .fa-twitter:hover, .fa-lastfm-square:hover, .fa-envelope:hover{
 	color: #fff;
 }
