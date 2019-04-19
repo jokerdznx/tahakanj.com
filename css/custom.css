@@ -272,3 +272,10 @@ margin-top: 100px;
 	margin-top: 100px;
 
 }
+
+
+@media all and (max-device-width: 480px) {
+    .changeThisFont {
+        font-size: 0.5em;
+    }
+}
