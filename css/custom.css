@@ -5,6 +5,7 @@ Modify this file to your hearts content and make your website look awesome!*/
 
 body{
 	background-color: #ebebeb;
+	width: 100%;
 }
 
 /*Home*/
@@ -196,6 +197,21 @@ span.img-caption{
 	border-top: 1px solid #727272;
 
 }
+
+.footer2{
+	bottom: 0;
+	margin-bottom: -100px;
+	margin-top: 50px;
+	padding-top: 30px;
+	width: 100%;
+	min-height: 100px;
+	background-color: white;
+	color: white;
+	border-top: 1px solid #727272;
+
+}
+
+
 
 .inside {
 	padding-bottom: 30px;
