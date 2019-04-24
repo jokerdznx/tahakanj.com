@@ -8,6 +8,13 @@ body{
 	width: 100%;
 }
 
+
+::selection {
+  background: #ffb7b7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffb7b7; /* Gecko Browsers */
+}
 /*Home*/
 .full-page-bg {
   position: absolute;
