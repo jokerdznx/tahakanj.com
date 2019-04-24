@@ -8,6 +8,10 @@ body{
 	width: 100%;
 }
 
+.text-center {
+   text-align:center
+}
+
 
 ::selection {
   background: #ffb7b7; /* WebKit/Blink Browsers */
