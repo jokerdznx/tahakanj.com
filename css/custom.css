@@ -199,7 +199,11 @@ span.img-caption{
 	padding-left: 10px;
 }
 
-.fa-facebook:hover, .fa-linkedin:hover, .fa-instagram:hover,  .fa-twitter:hover, .fa-lastfm-square:hover, .fa-envelope:hover{
+.fa-linkedin:hover{
+	color: #fff;
+}
+
+.fa-facebook:hover, .fa-instagram:hover,  .fa-twitter:hover, .fa-lastfm-square:hover, .fa-envelope:hover{
 	color: #fff;
 }
 
