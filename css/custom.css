@@ -192,6 +192,13 @@ span.img-caption{
 	margin-top: -80px;
 }
 
+.fa-linkedin {
+	display: inline-block;
+	font-size: 35px;
+	color: #d93749;
+	padding-left: 10px;
+}
+
 .fa-facebook:hover, .fa-linkedin:hover, .fa-instagram:hover,  .fa-twitter:hover, .fa-lastfm-square:hover, .fa-envelope:hover{
 	color: #fff;
 }
