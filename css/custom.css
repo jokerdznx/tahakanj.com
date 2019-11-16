@@ -13,12 +13,8 @@ body{
 }
 
 
-::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
-}
+
+
 /*Home*/
 .full-page-bg {
   position: absolute;
@@ -103,6 +99,16 @@ h1, h2, h3, h4, h5, h6 {
 		color: #dc3545;
 		letter-spacing: -0.5px;
 	}
+
+
+	h9{
+		text-transform: uppercase;
+		color: #196311;
+		letter-spacing: -0.5px;
+		font-size: 30px;
+	}
+
+
 
 p, li, span, a {
 	font-family: 'helvetica', Sans-Serif;
@@ -211,20 +217,27 @@ span.img-caption{
 
 }
 
+
+.icons2 a{
+	display: inline-block;
+	font-size: 35px;
+	color: #196311;
+	padding-left: 10px;
+
+}
+
+
+
 .flex {
 	margin-top: -80px;
 }
 
-.fa-linkedin {
-	display: inline-block;
-	font-size: 35px;
-	color: #d93749;
-	padding-left: 10px;
-}
 
 .fa-linkedin:hover{
 	color: #fff;
 }
+
+
 
 .fa-facebook:hover, .fa-instagram:hover,  .fa-twitter:hover, .fa-lastfm-square:hover, .fa-envelope:hover{
 	color: #fff;
