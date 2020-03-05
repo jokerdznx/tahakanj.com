@@ -101,6 +101,16 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom: -10px;
 	}
 
+	h1.oasis{
+		font-size: 70px;
+	}
+
+	h1.oasis-h{
+		font-size: 70px;
+		margin-top: 20px;
+		margin-bottom: -10px;
+	}
+
 	h2.welcome-special-sub{
 		font-family: 'Lato', Sans-Serif;
 		font-size: 30px;
