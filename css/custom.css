@@ -84,7 +84,7 @@ img{
 
 /*Font Override Rules*/
 h1, h2, h3, h4, h5, h6 {
-	font-family:'helvetica', Sans-Serif;
+	font-family:'Lato', Sans-Serif;
 	margin-bottom: 20px;
 }
 	h1.welcome-special{
