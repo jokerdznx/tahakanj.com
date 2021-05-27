@@ -116,6 +116,14 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 30px;
 	}
 
+	p.welcome-special-sub0{
+		color: #000;
+    line-height: 26px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    text-align: left;
+	}
+
 	h3{
 		text-transform: uppercase;
 		color: #dc3545;
